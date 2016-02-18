@@ -1,8 +1,48 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+.slider .indicators .indicator-item {
+  background-color: #666666;
+  border: 3px solid #ffffff;
+}
+.slider .indicators .indicator-item.active {
+  background-color: #ffffff;
+}
+.slider {
+  margin: 0 auto;
+}
+.slider{
+	height: 100%!important;
+	z-index: -1;
+}
+.slider .indicators {
+  bottom: 60px;
+  z-index: 100;
+  /* text-align: left; */
+}
+.slider-overlay{
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background: rgba(0, 0, 0, 0.4);
+	position: absolute;
+	top: 0;
+}
+.caption{
+	z-index: 2;
+}
+@media screen and (max-width: 1025px) {
+	.slider.fullscreen, .slider-overlay{
+		height: 587px!important;
+	}
+}
+@media screen and (max-width: 767px) {
+	.slider.fullscreen, .slider-overlay{
+		height: 400px!important;
+	}
 }
