@@ -35,14 +35,47 @@ a {
 }
 .caption{
 	z-index: 2;
+	margin-top: 100px;
 }
-@media screen and (max-width: 1025px) {
+nav{
+	padding-left: 25px;
+	background-color: transparent;
+	box-shadow: none;
+	position: fixed;
+}
+@media screen and (max-width: 992px) {
 	.slider.fullscreen, .slider-overlay{
 		height: 587px!important;
 	}
+	
 }
 @media screen and (max-width: 767px) {
 	.slider.fullscreen, .slider-overlay{
 		height: 400px!important;
 	}
+	.caption{
+		margin-top: 50px;
+	}
+	.caption h3{
+		font-size: 1.7rem;
+	}
+	.caption h5{
+		font-size: 1.1rem;
+	}
+}
+.scrolled{
+	background-color: rgba(255,255,255, 0.98);
+	-webkit-transition: background-color 1000ms linear;
+    -moz-transition: background-color 1000ms linear;
+    -o-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+}
+.scrolled a{
+	color:black;
+	-webkit-transition: color 500ms linear;
+    -moz-transition: color 500ms linear;
+    -o-transition: color 500ms linear;
+    -ms-transition: color 500ms linear;
+    transition: color 500ms linear;
 }
